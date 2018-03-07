@@ -1,15 +1,15 @@
-<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="计算机视觉，深度学习"><title>Windows下hexo+githubpage搭建 | 夜奔小狐狸的专栏</title><link rel="stylesheet" type="text/css" href="/css/normalize.css"><link rel="stylesheet" type="text/css" href="/css/highlight.css"><link rel="stylesheet" type="text/css" href="/css/very-simple.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><!-- include the sidebar--><!-- include ./includes/sidebar.jade--><!-- Blog title and subtitle--><header><div class="container header"><a id="logo" href="/." class="title">夜奔小狐狸的专栏</a><span class="subtitle"></span><label id="toggle-menu" for="menu" onclick><i class="fa fa-bars"></i></label></div></header><!-- use checkbox hack for toggle nav-bar on small screens--><input id="menu" type="checkbox"><!-- Navigation Links--><nav id="nav"><div class="container"><a href="/" class="sidebar-nav-item active">Home</a><a href="/archives" class="sidebar-nav-item">Archives</a></div></nav><div id="header-margin-bar"></div><!-- gallery that comes before the header--><div class="wrapper"><div class="container post-header"><h1>Windows下hexo+githubpage搭建</h1></div></div><div class="wrapper"><div class="container meta"><div class="post-time">2018-03-07</div></div></div><article><div class="container post"><p>目前静态网站有很多搭建方法，jekyll+githubpage，hexo+githubpage<br>我采用的是hexo+githubpage，因为jekyll好麻烦啊，泪～～～ </p>
-<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><ol>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Windows下hexo+githubpage搭建 · 夜奔小狐狸的专栏</title><meta name="description" content="Lorem ipsum dolor sit amet, consectetur."><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="夜奔小狐狸的专栏"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/335809992" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/illusionmia" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Windows下hexo+githubpage搭建</h1><div class="post-info">2018年3月7日</div><div class="post-content"><p>目前静态网站有很多搭建方法，jekyll+githubpage，hexo+githubpage我采用的是hexo+githubpage，因为jekyll好麻烦啊，泪～～～ </p>
+<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><ol>
 <li><p>下载：下载windows版本的github<br>下载地址：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">github-windows</a>  </p>
 </li>
 <li><p>安装：双击安装，一路next。</p>
 </li>
 </ol>
-<h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><ol>
+<h1 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h1><ol>
 <li>下载：官网下载最新版的node.js<br>下载地址：<a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node.js</a>  </li>
 <li>安装：双击安装，一路next</li>
 </ol>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>打开git bash/git shell<br>输入: </p>
+<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><p>打开git bash/git shell<br>输入: </p>
 <blockquote>
 <p>npm install hexo-cli -g  </p>
 </blockquote>
@@ -17,7 +17,7 @@
 <blockquote>
 <p>hexo: 3.6.0<br>hexo-cli: 1.1.0<br>os: Windows_NT 6.1.7601 win32 x64<br>http_parser: 2.7.0<br>node: 8.9.4<br>v8: 6.1.534.50<br>uv: 1.15.0<br>zlib: 1.2.11<br>ares: 1.10.1-DEV<br>modules: 57<br>nghttp2: 1.25.0<br>openssl: 1.0.2n<br>icu: 59.1<br>unicode: 9.0<br>cldr: 31.0.1<br>tz: 2017b  </p>
 </blockquote>
-<h2 id="初始化blog"><a href="#初始化blog" class="headerlink" title="初始化blog"></a>初始化blog</h2><p>进入准备创建的blog目录，打开git bash/git shell，输入以下命令初始化：</p>
+<h1 id="初始化blog"><a href="#初始化blog" class="headerlink" title="初始化blog"></a>初始化blog</h1><p>进入准备创建的blog目录，打开git bash/git shell，输入以下命令初始化：</p>
 <blockquote>
 <p>hexo init yourblogname</p>
 </blockquote>
@@ -26,12 +26,12 @@
 <p>cd yourblogname<br>hexo server</p>
 </blockquote>
 <p>浏览器输入127.0.0.1:4000或者是localhost:4000即可访问。</p>
-<p>###换theme<br>自带的皮肤略丑，可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网</a>挑选自己喜欢的皮肤，当然有能力的可以自己做。根据作者的github教程，一般是：</p>
+<p>#换theme<br>自带的皮肤略丑，可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网</a>挑选自己喜欢的皮肤，当然有能力的可以自己做。根据作者的github教程，一般是：</p>
 <blockquote>
 <p>git clone 作者的theme.git themes/* </p>
 </blockquote>
 <p>将_config.yml中的thems: landscape 改为*<br>刷新即可看到修改结果</p>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ol>
+<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><ol>
 <li>新建仓库：<br>在你的github中新建同你github用户名相同的仓库，setting中可看见你的githubpage地址</li>
 <li><p>在_config.yml中配置git服务器：</p>
 <blockquote>
@@ -48,7 +48,4 @@
 </li>
 </ol>
 <p>部署成功，打开地址即可访问<br>这里附上我的<a href="https://illusionmia.github.io/" target="_blank" rel="noopener">blog地址</a></p>
-</div><!-- comment system--><div class="container"><hr></div></article><footer id="footer"><div class="container"><div class="bar"><div class="social"><a href="/atom.xml" target="_blank"><i class="fa fa-rss"></i></a></div><div class="footer">© 2018 <a href="/" rel="nofollow">Shiyu Dai</a>. Powered by <a rel="nofollow" target="_blank" href="https://hexo.io">Hexo</a>. Theme <a target="_blank" href="https://github.com/lotabout/very-simple">very-simple</a>.</div></div></div></footer><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css"><script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script><script src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script><script>$(document).ready(function() {
-    $(".fancybox").fancybox();
-});
-</script></body></html>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/03/06/hello-world/" class="next">NEXT</a></div><div class="copyright"><p>© 2018 <a href="http://yoursite.com">Shiyu Dai</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

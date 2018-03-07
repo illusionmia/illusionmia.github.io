@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-07T02:49:26.417Z</updated>
+  <updated>2018-03-07T03:53:34.181Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="http://yoursite.com/2018/03/07/Windows%E4%B8%8Bhexo-githubpage%E6%90%AD%E5%BB%BA/"/>
     <id>http://yoursite.com/2018/03/07/Windows下hexo-githubpage搭建/</id>
     <published>2018-03-07T02:46:28.000Z</published>
-    <updated>2018-03-07T02:49:26.417Z</updated>
+    <updated>2018-03-07T03:53:34.181Z</updated>
     
-    <content type="html"><![CDATA[<p>目前静态网站有很多搭建方法，jekyll+githubpage，hexo+githubpage<br>我采用的是hexo+githubpage，因为jekyll好麻烦啊，泪～～～ </p><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><ol><li><p>下载：下载windows版本的github<br>下载地址：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">github-windows</a>  </p></li><li><p>安装：双击安装，一路next。</p></li></ol><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><ol><li>下载：官网下载最新版的node.js<br>下载地址：<a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node.js</a>  </li><li>安装：双击安装，一路next</li></ol><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>打开git bash/git shell<br>输入: </p><blockquote><p>npm install hexo-cli -g  </p></blockquote><p>安装过后输入hexo-v，出现以下信息，则表示安装成功</p><blockquote><p>hexo: 3.6.0<br>hexo-cli: 1.1.0<br>os: Windows_NT 6.1.7601 win32 x64<br>http_parser: 2.7.0<br>node: 8.9.4<br>v8: 6.1.534.50<br>uv: 1.15.0<br>zlib: 1.2.11<br>ares: 1.10.1-DEV<br>modules: 57<br>nghttp2: 1.25.0<br>openssl: 1.0.2n<br>icu: 59.1<br>unicode: 9.0<br>cldr: 31.0.1<br>tz: 2017b  </p></blockquote><h2 id="初始化blog"><a href="#初始化blog" class="headerlink" title="初始化blog"></a>初始化blog</h2><p>进入准备创建的blog目录，打开git bash/git shell，输入以下命令初始化：</p><blockquote><p>hexo init yourblogname</p></blockquote><p>自动产生blog的目录，本地blog已建好，输入：</p><blockquote><p>cd yourblogname<br>hexo server</p></blockquote><p>浏览器输入127.0.0.1:4000或者是localhost:4000即可访问。</p><p>###换theme<br>自带的皮肤略丑，可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网</a>挑选自己喜欢的皮肤，当然有能力的可以自己做。根据作者的github教程，一般是：</p><blockquote><p>git clone 作者的theme.git themes/* </p></blockquote><p>将_config.yml中的thems: landscape 改为*<br>刷新即可看到修改结果</p><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ol><li>新建仓库：<br>在你的github中新建同你github用户名相同的仓库，setting中可看见你的githubpage地址</li><li><p>在_config.yml中配置git服务器：</p><blockquote><p>deploy:  </p><blockquote><p> type: git<br> repo: git@server:/home/git/blog.git<br> branch: master  </p></blockquote></blockquote></li><li><p>输入:</p><blockquote><p>hexo g<br>hexo d</p></blockquote></li></ol><p>部署成功，打开地址即可访问<br>这里附上我的<a href="https://illusionmia.github.io/" target="_blank" rel="noopener">blog地址</a></p>]]></content>
+    <content type="html"><![CDATA[<p>目前静态网站有很多搭建方法，jekyll+githubpage，hexo+githubpage我采用的是hexo+githubpage，因为jekyll好麻烦啊，泪～～～ </p><h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><ol><li><p>下载：下载windows版本的github<br>下载地址：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">github-windows</a>  </p></li><li><p>安装：双击安装，一路next。</p></li></ol><h1 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h1><ol><li>下载：官网下载最新版的node.js<br>下载地址：<a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node.js</a>  </li><li>安装：双击安装，一路next</li></ol><h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><p>打开git bash/git shell<br>输入: </p><blockquote><p>npm install hexo-cli -g  </p></blockquote><p>安装过后输入hexo-v，出现以下信息，则表示安装成功</p><blockquote><p>hexo: 3.6.0<br>hexo-cli: 1.1.0<br>os: Windows_NT 6.1.7601 win32 x64<br>http_parser: 2.7.0<br>node: 8.9.4<br>v8: 6.1.534.50<br>uv: 1.15.0<br>zlib: 1.2.11<br>ares: 1.10.1-DEV<br>modules: 57<br>nghttp2: 1.25.0<br>openssl: 1.0.2n<br>icu: 59.1<br>unicode: 9.0<br>cldr: 31.0.1<br>tz: 2017b  </p></blockquote><h1 id="初始化blog"><a href="#初始化blog" class="headerlink" title="初始化blog"></a>初始化blog</h1><p>进入准备创建的blog目录，打开git bash/git shell，输入以下命令初始化：</p><blockquote><p>hexo init yourblogname</p></blockquote><p>自动产生blog的目录，本地blog已建好，输入：</p><blockquote><p>cd yourblogname<br>hexo server</p></blockquote><p>浏览器输入127.0.0.1:4000或者是localhost:4000即可访问。</p><p>#换theme<br>自带的皮肤略丑，可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网</a>挑选自己喜欢的皮肤，当然有能力的可以自己做。根据作者的github教程，一般是：</p><blockquote><p>git clone 作者的theme.git themes/* </p></blockquote><p>将_config.yml中的thems: landscape 改为*<br>刷新即可看到修改结果</p><h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><ol><li>新建仓库：<br>在你的github中新建同你github用户名相同的仓库，setting中可看见你的githubpage地址</li><li><p>在_config.yml中配置git服务器：</p><blockquote><p>deploy:  </p><blockquote><p> type: git<br> repo: git@server:/home/git/blog.git<br> branch: master  </p></blockquote></blockquote></li><li><p>输入:</p><blockquote><p>hexo g<br>hexo d</p></blockquote></li></ol><p>部署成功，打开地址即可访问<br>这里附上我的<a href="https://illusionmia.github.io/" target="_blank" rel="noopener">blog地址</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;目前静态网站有很多搭建方法，jekyll+githubpage，hexo+githubpage&lt;br&gt;我采用的是hexo+githubpage，因为jekyll好麻烦啊，泪～～～ &lt;/p&gt;
-&lt;h2 id=&quot;环境搭建&quot;&gt;&lt;a href=&quot;#环境搭建&quot; class=&quot;heade
+        &lt;p&gt;目前静态网站有很多搭建方法，jekyll+githubpage，hexo+githubpage我采用的是hexo+githubpage，因为jekyll好麻烦啊，泪～～～ &lt;/p&gt;
+&lt;h1 id=&quot;环境搭建&quot;&gt;&lt;a href=&quot;#环境搭建&quot; class=&quot;headerlin
       
     
     </summary>
